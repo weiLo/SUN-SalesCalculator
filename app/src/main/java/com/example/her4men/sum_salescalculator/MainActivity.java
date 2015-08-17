@@ -143,7 +143,8 @@ public class MainActivity extends ActionBarActivity {
                             dis_pos++;
                         }
                     }
-                    textCal.setText(String.valueOf(total_price));
+                    textCal.setText(String.valueOf(total_price) + "TESTINGGGGGGGG");
+
                 }
                 else
                 {
