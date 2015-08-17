@@ -1,0 +1,177 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:stretchColumns="1"
+    tools:context=".MainActivity" >
+
+
+    <TableRow>
+        <TextView
+
+            android:layout_height="35dp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/price_45"
+            android:gravity="center"/>
+        <Spinner
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/d45price_spinner"
+            android:spinnerMode="dropdown">
+        </Spinner>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:text="@string/price_55"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d55price_spinner"
+            android:spinnerMode="dropdown">
+        </Spinner>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:text="@string/price_65"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d65price_spinner"
+            android:spinnerMode="dropdown">
+        </Spinner>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:text="@string/price_85"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d85price_spinner"
+            android:spinnerMode="dropdown">
+        </Spinner>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:text="@string/price_120"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d120price_spinner"
+            android:spinnerMode="dropdown">
+        </Spinner>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:text="@string/price_199"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d199price_spinner"
+            android:spinnerMode="dropdown">
+        </Spinner>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:text="@string/price_249"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d249price_spinner"
+            android:spinnerMode="dropdown">
+        </Spinner>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:text="@string/price_299"
+            android:gravity="left"/>
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d299price_spinner"
+            android:spinnerMode="dropdown">
+        </Spinner>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:text="@string/price_399"
+            android:gravity="center"/>
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/d399price_spinner"
+            android:spinnerMode="dropdown">
+        </Spinner>
+    </TableRow>
+    <!-- Calculate Button-->
+    <TableRow>
+        <Button
+            android:id="@+id/btnCal"
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:text="Calculate"/>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="left"/>
+    </TableRow>
+
+    <!-- Warning Massage -->
+    <TableRow>
+        <TextView
+            android:id="@+id/error_msg"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="center"/>
+    </TableRow>
+
+</TableLayout>
