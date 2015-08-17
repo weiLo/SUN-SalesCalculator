@@ -16,7 +16,8 @@ public class MainActivity extends ActionBarActivity {
 
     private int[] p_Range = {45,55,65,85,120,199,249,299,399},   //9 itesm
                   qty_array; //9 different qty
-    private double[] disc_range = {1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1};
+    private double[] disc_range = { 1, 0.9, 0.8, 0.7, 0.6,
+                                    0.5, 0.4, 0.3, 0.2, 0.1, 0};
     private Spinner spinner1,
                     spinner2,
                     spinner3,
@@ -89,6 +90,30 @@ public class MainActivity extends ActionBarActivity {
         spinner9.setAdapter(adapter);
     }
 
+    public boolean checkqty(int[] total_qty)
+    {
+
+        if(totalQty(total_qty) <= 11)
+        {
+            in_range = true;
+        }
+        else
+        {
+            in_range = false;
+        }
+        return in_range;
+    }
+
+    private int totalQty(int[] total_qty)
+    {
+        int qty = 0;
+        for(int i = 0; i < 9; i++)
+        {
+            qty += total_qty[i];
+        }
+        return qty;
+    }
+
     public void addListenerOnButton() {
 
 
@@ -129,13 +154,14 @@ public class MainActivity extends ActionBarActivity {
                 double total_price = 0;
                 if(checkqty(qty_array) == true)
                 {
-                    textCal.setText(String.valueOf(totalQty(qty_array)));
+                    textCal.setText("0");
                     textMsg.setText(""); //msg reset
                     total_price = 0; //reset
                     //p_range
                     //disc_range
                     int dis_pos = 0;
-                    for(int i = 0; i < 9; i++)
+                    //9 prices,
+                    for(int i = 8; i >= 0 ; i--)
                     {
                         for(int j = 0; j < qty_array[i]; j++)
                         {
@@ -143,8 +169,7 @@ public class MainActivity extends ActionBarActivity {
                             dis_pos++;
                         }
                     }
-                    textCal.setText(String.valueOf(total_price) + "TESTINGGGGGGGG");
-
+                    textCal.setText(String.valueOf(total_price));
                 }
                 else
                 {
@@ -158,27 +183,5 @@ public class MainActivity extends ActionBarActivity {
         });
     }
 
-    private boolean checkqty(int[] total_qty)
-    {
 
-        if(totalQty(total_qty) <= 11)
-        {
-            in_range = true;
-        }
-        else
-        {
-            in_range = false;
-        }
-        return in_range;
-    }
-
-    private int totalQty(int[] total_qty)
-    {
-        int qty = 0;
-        for(int i = 0; i < 9; i++)
-        {
-            qty += total_qty[i];
-        }
-        return qty;
-    }
 }
