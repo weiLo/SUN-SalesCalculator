@@ -9,7 +9,7 @@
     tools:context=".MainActivity" >
 
 
-    <TableRow>
+    <TableRow android:textAlignment="center">
         <TextView
 
             android:layout_height="35dp"
@@ -22,7 +22,9 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/d45price_spinner"
-            android:spinnerMode="dropdown">
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center">
         </Spinner>
     </TableRow>
 
@@ -38,6 +40,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/d55price_spinner"
+            android:layout_gravity="center"
             android:spinnerMode="dropdown">
         </Spinner>
     </TableRow>
@@ -182,7 +185,9 @@
             android:layout_height="wrap_content"
             android:layout_width="0dip"
             android:layout_weight="1"
+            android:textSize="40dp"
             android:text=""
+            android:textColor="#ff0021"
             android:gravity="center"/>
     </TableRow>
 

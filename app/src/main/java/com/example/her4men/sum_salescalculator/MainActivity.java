@@ -135,11 +135,6 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(MainActivity.this,
-                        "OnClickListener : " +
-                                "\nSpinner 1 : "+ String.valueOf(spinner1.getSelectedItem()) +
-                                "\nSpinner 2 : "+ String.valueOf(spinner2.getSelectedItem()),
-                        Toast.LENGTH_SHORT).show();
                 int[] qty_array = new int[9];
                 qty_array[0] = Integer.valueOf(String.valueOf(spinner1.getSelectedItem()));
                 qty_array[1] = Integer.valueOf(String.valueOf(spinner2.getSelectedItem()));
